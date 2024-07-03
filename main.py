@@ -1,5 +1,7 @@
-print('Hello world!')
-print('Это тестовый вариант')
+#импортируем модуль для работы с датой и временем
+from datetime import datetime 
+#программа предназначеня для получения текущей даты и времени
 
-for i in range(10):
-    print(i)
+now = datetime.now().strftime('%d.%m.%Y %H:%M')
+print(now)
+
